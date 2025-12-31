@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "username": "kitty_cat",
+    "caption": "This is my kitty cat 🐱",
+    "loopCount": 8420000,
+    "videoFile": "vine1.mp4",
+    "avatar": "assets/avatars/user1.jpg",
+    "timestamp": "6h"
+  },
+  {
+    "id": 2,
+    "username": "chili",
+    "caption": "Running chili pepper 🌶️",
+    "loopCount": 11600000,
+    "videoFile": "vine2.mp4",
+    "avatar": "assets/avatars/user2.jpg",
+    "timestamp": "3h"
+  },
+  {
+    "id": 3,
+    "username": "DrewGooden",
+    "caption": "Road work ahead? Uh yeah, I sure hope it does.",
+    "loopCount": 18400000,
+    "videoFile": "vine3.mp4",
+    "avatar": "assets/avatars/user3.jpg",
+    "timestamp": "1h"
+  },
+  {
+    "id": 4,
+    "username": "kid_dancing",
+    "caption": "Kid dancing in the elevator 💃",
+    "loopCount": 9200000,
+    "videoFile": "vine4.mp4",
+    "avatar": "assets/avatars/user4.jpg",
+    "timestamp": "8h"
+  },
+  {
+    "id": 5,
+    "username": "dammit",
+    "caption": "I love Jesus, dammit. That’s why I go to church.",
+    "loopCount": 7600000,
+    "videoFile": "vine5.mp4",
+    "avatar": "assets/avatars/user5.jpg",
+    "timestamp": "12h"
+  },
+  {
+    "id": 6,
+    "username": "lincon",
+    "caption": "I got Abraham Lincoln.",
+    "loopCount": 6400000,
+    "videoFile": "vine6.mp4",
+    "avatar": "assets/avatars/user6.jpg",
+    "timestamp": "1d"
+  },
+  {
+    "id": 7,
+    "username": "CalebCity",
+    "caption": "I come on a bit strong sometimes.",
+    "loopCount": 10300000,
+    "videoFile": "vine7.mp4",
+    "avatar": "assets/avatars/user7.jpg",
+    "timestamp": "2d"
+  },
+  {
+    "id": 8,
+    "username": "errbody",
+    "caption": "Errbody in da club get tipsy 🎶",
+    "loopCount": 15800000,
+    "videoFile": "vine8.mp4",
+    "avatar": "assets/avatars/user8.jpg",
+    "timestamp": "3d"
+  },
+  {
+    "id": 9,
+    "username": "frog",
+    "caption": "Best dab ever.",
+    "loopCount": 8900000,
+    "videoFile": "vine9.mp4",
+    "avatar": "assets/avatars/user9.jpg",
+    "timestamp": "4d"
+  },
+  {
+    "id": 10,
+    "username": "detector",
+    "caption": "Are you a smoke detector?",
+    "loopCount": 7100000,
+    "videoFile": "vine10.mp4",
+    "avatar": "assets/avatars/user10.jpg",
+    "timestamp": "5d"
+  },
+  {
+    "id": 11,
+    "username": "LoganPaul",
+    "caption": "I love you, bro.",
+    "loopCount": 19200000,
+    "videoFile": "vine11.mp4",
+    "avatar": "assets/avatars/user11.jpg",
+    "timestamp": "6d"
+  },
+  {
+    "id": 12,
+    "username": "LoganPaul",
+    "caption": "When you see your ex.",
+    "loopCount": 16800000,
+    "videoFile": "vine12.mp4",
+    "avatar": "assets/avatars/user12.jpg",
+    "timestamp": "1w"
+  },
+  {
+    "id": 13,
+    "username": "wonderland",
+    "caption": "Alice in Wonderland logic makes no sense.",
+    "loopCount": 12450000,
+    "videoFile": "vine13.mp4",
+    "avatar": "assets/avatars/user13.jpg",
+    "timestamp": "2h"
+  },
+  {
+    "id": 14,
+    "username": "defence",
+    "caption": "Defence mechanism activated.",
+    "loopCount": 8300000,
+    "videoFile": "vine14.mp4",
+    "avatar": "assets/avatars/user14.jpg",
+    "timestamp": "4h"
+  },
+  {
+    "id": 15,
+    "username": "infected",
+    "caption": "Guess who is infected.",
+    "loopCount": 9700000,
+    "videoFile": "vine15.mp4",
+    "avatar": "assets/avatars/user15.jpg",
+    "timestamp": "6h"
+  },
+  {
+    "id": 16,
+    "username": "predator",
+    "caption": "How predator cleans his teeth.",
+    "loopCount": 10500000,
+    "videoFile": "vine16.mp4",
+    "avatar": "assets/avatars/user16.jpg",
+    "timestamp": "9h"
+  },
+  {
+    "id": 17,
+    "username": "scare",
+    "caption": "How to scare your grandparents.",
+    "loopCount": 8900000,
+    "videoFile": "vine17.mp4",
+    "avatar": "assets/avatars/user17.jpg",
+    "timestamp": "12h"
+  },
+  {
+    "id": 18,
+    "username": "ironman",
+    "caption": "King Bach as Iron Man.",
+    "loopCount": 16800000,
+    "videoFile": "vine18.mp4",
+    "avatar": "assets/avatars/user18.jpg",
+    "timestamp": "1d"
+  },
+  {
+    "id": 19,
+    "username": "mum",
+    "caption": "My mum in a horror movie.",
+    "loopCount": 9400000,
+    "videoFile": "vine19.mp4",
+    "avatar": "assets/avatars/user19.jpg",
+    "timestamp": "1d"
+  },
+  {
+    "id": 20,
+    "username": "nicki",
+    "caption": "Singing Nicki Minaj like my life depends on it.",
+    "loopCount": 13100000,
+    "videoFile": "vine20.mp4",
+    "avatar": "assets/avatars/user20.jpg",
+    "timestamp": "2d"
+  },
+  {
+    "id": 21,
+    "username": "snoop",
+    "caption": "Trying to sound like Snoop Dogg.",
+    "loopCount": 15200000,
+    "videoFile": "vine21.mp4",
+    "avatar": "assets/avatars/user21.jpg",
+    "timestamp": "2d"
+  },
+  {
+    "id": 22,
+    "username": "old",
+    "caption": "When old people fall asleep anywhere.",
+    "loopCount": 8700000,
+    "videoFile": "vine22.mp4",
+    "avatar": "assets/avatars/user22.jpg",
+    "timestamp": "3d"
+  },
+  {
+    "id": 23,
+    "username": "crack",
+    "caption": "Crack kid vines energy.",
+    "loopCount": 14300000,
+    "videoFile": "vine23.mp4",
+    "avatar": "assets/avatars/user23.jpg",
+    "timestamp": "3d"
+  },
+  {
+    "id": 24,
+    "username": "big",
+    "caption": "2026 Nah",
+    "loopCount": 14300000,
+    "videoFile": "vine24.mp4",
+    "avatar": "assets/avatars/user24.jpg",
+    "timestamp": "3d"
+  },
+  {
+    "id": 25,
+    "username": "heck yeah",
+    "caption": "2026 is 2016 yeaahhhhh",
+    "loopCount": 14300000,
+    "videoFile": "vine25.mp4",
+    "avatar": "assets/avatars/user25.jpg",
+    "timestamp": "3d"
+  }
+]
