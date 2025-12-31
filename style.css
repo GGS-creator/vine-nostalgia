@@ -1,0 +1,397 @@
+/* Reset & Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #f5f5f5;
+    /* Light grey for feed contrast */
+    color: #333;
+    overflow-x: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Constants */
+:root {
+    --vine-green: #00bf8f;
+    --dark-gray: #4a4a4a;
+    --light-gray: #e0e0e0;
+    --bg-color: #f5f5f5;
+    --nav-height: 48px;
+    /* Classic mobile nav height */
+    --header-height: 48px;
+}
+
+/* Layout */
+#app-container {
+    flex: 1;
+    overflow-y: scroll;
+    /* Smooth scrolling container */
+    padding-top: var(--header-height);
+    padding-bottom: var(--nav-height);
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    max-width: 640px;
+    /* Tablet/Phone max width */
+    margin: 0 auto;
+    /* Center on desktop */
+    background-color: var(--bg-color);
+    position: relative;
+    /* Context */
+}
+
+/* Header */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 640px;
+    height: var(--header-height);
+    background-color: var(--vine-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    z-index: 1000;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: -0.5px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ... existing styles ... */
+
+/* Bottom Nav */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 640px;
+    height: var(--nav-height);
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    color: #888;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.1s;
+}
+
+.nav-item.active {
+    color: var(--vine-green);
+}
+
+.nav-item svg {
+    display: block;
+}
+
+/* Views */
+.view {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    animation: fadeIn 0.3s ease;
+}
+
+.view.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Feed & Cards */
+.feed-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.vine-card {
+    background: white;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.header-info {
+    flex: 1;
+}
+
+.username {
+    color: var(--vine-green);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.timestamp {
+    color: #999;
+    font-size: 12px;
+}
+
+.video-container {
+    background: black;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+    /* Square videos were classic Vine, but we might support 16:9 or auto. 
+                         Vine was strictly 1:1 for a long time. 
+                         Let's assume 1:1 for the 'classic' look. */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-footer {
+    padding: 12px;
+}
+
+.caption {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.stats-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.loop-count {
+    display: flex;
+    align-items: center;
+    color: #999;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.loop-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+    fill: #00bf8f;
+    /* Green loop icon */
+}
+
+/* Profile View */
+.profile-header {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.profile-avatar-lg {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto 10px;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-val {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.follow-btn {
+    display: block;
+    margin: 15px auto 0;
+    background-color: transparent;
+    border: 2px solid var(--vine-green);
+    color: var(--vine-green);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: default;
+    /* Non-functional */
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+.grid-item {
+    background: #000;
+    padding-top: 100%;
+    /* Square */
+    position: relative;
+}
+
+.grid-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Explore/Placeholder */
+.placeholder-message {
+    padding: 40px;
+    text-align: center;
+    color: #888;
+}
+
+/* Footer text */
+.footer-note {
+    text-align: center;
+    padding: 20px;
+    font-size: 10px;
+    color: #aaa;
+}
+
+/* Side Menu */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    /* Above header */
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.menu-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    /* Standard sidebar width */
+    height: 100%;
+    background: #00bf8f;
+    color: white;
+    z-index: 1002;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding-top: var(--header-height);
+}
+
+.side-menu.closed {
+    transform: translateX(-100%);
+}
+
+.menu-content {
+    padding: 20px;
+}
+
+/* Interaction States */
+#header-cam-btn:active {
+    opacity: 0.5;
+    /* Visual feedback for click */
+}
+
+/* Follow Button States */
+.follow-btn.following {
+    background-color: var(--vine-green);
+    color: white;
+}
